@@ -59,6 +59,7 @@ app.get("/all-non-pets", function(req, res) {
     };
 
     for (var i = 0; i < animals.length; i++) {
+        var currentAnimal = animals[i];
         if (!currentAnimal.pet) {
             data.animals.push(currentAnimal);
         }
@@ -74,6 +75,7 @@ app.get("/all-animals", function(req, res) {
     };
 
     for (var i = 0; i < animals.length; i++) {
+        var currentAnimal = animals[i];
         if (currentAnimal.pet || !currentAnimal.pet) {
             data.animals.push(currentAnimal);
         }
