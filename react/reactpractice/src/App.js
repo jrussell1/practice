@@ -1,6 +1,6 @@
 import React from "react";
-import HelloReact from "./components/HelloReact";
+import JSXVariables from "./components/JSXVariables";
 
-const App = () => <HelloReact />;
+const App = () => <JSXVariables />;
 
 export default App;
