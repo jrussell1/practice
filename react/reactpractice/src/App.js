@@ -1,6 +1,6 @@
 import React from "react";
-import JSXVariables from "./components/JSXVariables";
+import Calculator from "./components/Calculator";
 
-const App = () => <JSXVariables />;
+const App = () => <Calculator />;
 
 export default App;
