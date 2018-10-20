@@ -1,6 +1,6 @@
 import React from "react";
-import Calculator from "./components/Calculator";
+import Form from "./components/Form";
 
-const App = () => <Calculator />;
+const App = () => <Form />;
 
 export default App;
