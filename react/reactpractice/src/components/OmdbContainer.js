@@ -33,13 +33,17 @@ class OmdbContainer extends Component {
             <Card
               heading={this.state.result.Title || "Search for a Movie to Begin"}
             >
-              <MovieDetail
-                title={this.state.result.Title}
-                src={this.state.result.Poster}
-                director={this.state.result.Director}
-                genre={this.state.result.Genre}
-                released={this.state.result.Released}
-              />
+              {this.state.Title ? (
+                <MovieDetail
+                  title={this.state.result.Title}
+                  src={this.state.result.Poster}
+                  director={this.state.result.Director}
+                  genre={this.state.result.Genre}
+                  released={this.state.result.Released}
+                />
+              ) : (
+                <h3>No results to Display</h3>
+              )}
             </Card>
           </Col>
           <Col size="md-4">
